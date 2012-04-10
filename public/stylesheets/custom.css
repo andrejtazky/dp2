@@ -1,0 +1,209 @@
+.container {
+  width: 900px;
+}
+
+body {
+
+  
+background-image: linear-gradient(left , rgb(230,230,230) 18%, rgb(119,199,224) 51%);
+background-image: -o-linear-gradient(left , rgb(230,230,230) 18%, rgb(119,199,224) 51%);
+background-image: -moz-linear-gradient(left , rgb(230,230,230) 18%, rgb(119,199,224) 51%);
+background-image: -webkit-linear-gradient(left , rgb(230,230,230) 18%, rgb(119,199,224) 51%);
+background-image: -ms-linear-gradient(left , rgb(230,230,230) 18%, rgb(119,199,224) 51%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.18, rgb(230,230,230)),
+	color-stop(0.51, rgb(119,199,224))
+);
+}
+
+header {
+  padding-top: 20px;
+  
+  
+}
+
+
+
+header nav.round ul li a {
+  color: #165389; 
+}
+
+
+
+
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+  color:   #165389; 
+}
+
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sign up button */
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #165389;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 8px;
+}
+
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:  10px;
+   background: #fff;
+  padding: 1em;
+}
+
+
+
+header img.anim{
+
+    width: 110px; 
+    height: 110px;
+    position: relative;
+     -webkit-animation-name: calendarMove;
+   -webkit-animation-duration: 2s; 
+    z-index: 1;
+  }
+  
+  header img.anim:hover{
+
+    position: relative;
+     -webkit-animation-name: calendarMove2;
+   -webkit-animation-duration: 2s; 
+    z-index: 1;
+  }
+ 
+  
+
+@-webkit-keyframes calendarMove {
+    0% {
+        left:0px;
+        -webkit-transform: rotate(0deg);
+    }
+    
+    
+    
+    50% {
+        left:430px;
+        -webkit-transform: rotate(360deg);
+    }
+    
+   
+    
+    100% {
+        left:0px;
+        -webkit-transform: rotate(0deg);
+    }
+  }
+  
+  @-webkit-keyframes calendarMove2 {
+    0% {
+        left:0px;
+        -webkit-transform: rotate(0deg);
+    }
+    
+    
+    
+    50% {
+        left:430px;
+        -webkit-transform: rotate(360deg);
+    }
+    
+   
+    
+    100% {
+        left:0px;
+        -webkit-transform: rotate(0deg);
+    }
+  }
+
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+footer nav.round ul li a {
+  color: #165389; 
+}
